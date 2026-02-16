@@ -48,3 +48,25 @@ a {
     a:hover {
         text-decoration: underline;
     }*/
+
+
+     /*Image links Hover Effect*/
+    /* Base style for the image */
+.premium-hover {
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); /* Ultra-smooth easing */
+    box-shadow: 0px 4px 10px rgba(255, 0, 220, 0.5); /* Softened initial shadow */
+    cursor: pointer;
+}
+
+/* Hover state */
+.premium-hover:hover {
+    transform: translateY(-10px) scale(1.03); /* Lifts the image up and slightly grows */
+    box-shadow: 0px 20px 40px rgba(255, 0, 220, 0.7), 
+                0px 0px 20px rgba(255, 0, 220, 0.4); /* Deepens and adds a glow */
+    filter: brightness(1.05); /* Subtle highlight */
+}
+
+/* Optional: Smooth transition back when mouse leaves */
+.premium-hover:not(:hover) {
+    transition: all 0.5s ease;
+}
