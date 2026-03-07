@@ -148,7 +148,10 @@ body {
         }*/
 
 
-
+        video {
+  border-radius: 300px;
+  box-shadow: 0 0 300px rgba(0, 255, 255, 0.2); /* Soft neon glow */
+}
 
 
    

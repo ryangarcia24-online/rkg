@@ -93,3 +93,37 @@ a {
     transform: scale(1.05); /* Slight zoom */
     box-shadow: 0px 10px 20px rgb(255, 0, 220) !important;
 }
+
+
+/*Reveal on Scroll
+
+.hero-reveal {
+    animation: reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes reveal {
+    0% { 
+        opacity: 0; 
+        transform: scale(0.8) translateY(30px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1) translateY(0); 
+    }
+}
+
+*/
+
+/* Floating Image 
+
+.floating-img {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+*/
