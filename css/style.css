@@ -153,5 +153,22 @@ body {
   box-shadow: 0 0 300px rgba(0, 255, 255, 0.2); /* Soft neon glow */
 }
 
+.contact-img {
+    width: 100%;
+    max-width: 400px; /* Desktop size */
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgb(255, 0, 220);
+}
+
+/* When the screen is less than 768px wide */
+@media (max-width: 767px) {
+    .contact-img {
+        max-width: 250px; /* Mobile size */
+        margin: 0 auto;  /* Centers it if needed */
+        display: block;
+    }
+}
+
 
    
