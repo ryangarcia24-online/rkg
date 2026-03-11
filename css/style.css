@@ -1,3 +1,4 @@
+
 body {
     background-image: url(../images/background.png);
     background-size: cover;
@@ -7,168 +8,114 @@ body {
 
   
 
-#Contact {
-    text-align: center;
-    padding: 50px 0; /* Add space at top and bottom instead of <br> tags */
-}
 
 
-/* Container to align buttons side-by-side */
-    .button-container {
-    display: flex;
-    gap: 15px;
-    margin-top: 25px;
-}
-
-/* Base button styles */
-    .btn {
-    padding: 12px 28px;
-    font-family: 'Inter', sans-serif; /* Or your site's font */
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    border-radius: 4px; /* Slight roundness for a modern look */
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-/* Primary Button (Solid Cyan) */
-    .btn-primary {
-    background-color: #00C2CB;
-    color: #ffffff;
-    border: 2px solid #00C2CB;
-}
-
-    .btn-primary:hover {
-        background-color: #008e95;
-        border-color: #008e95;
-        transform: translateY(-2px); /* Subtle lift effect */
-        box-shadow: 0 5px 15px rgba(0, 194, 203, 0.4);
-    }
-
-
-
-/* Outline Button (Transparent with Cyan border) */
-.btn-outline {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-}
-
-    .btn-outline:hover {
-        border-color: #00C2CB;
-        color: #00C2CB;
-        transform: translateY(-2px);
-    }
-
-
-
-
-.glass-container {
-    /* Background color with transparency (Alpha channel 0.1 to 0.3) */
-    background: rgba(0, 0, 0, 0.80);
-    /* The "Frosted Glass" effect */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    /* Optional: Subtle border and rounded corners to make it pop */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    /* Shadow for depth */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-/* Ensures the image stays centered on smaller screens */
-@media (max-width: 768px) {
-    .glass-container {
-        /* text-align: center; */
-    }
-
-
-    .contact-info a {
-        color: cyan;
-        text-decoration: none; /* Optional: removes the underline */
-    }
-
-        .contact-info a:hover {
-            color: darkcyan; /* Optional: changes color when you hover over it */
-        }
-
-
-
-    #scrollTopBtn {
-        display: none; /* Hidden by default */
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background-color: #333;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 50%; /* Makes it circular */
-        font-size: 18px;
-        transition: opacity 0.3s;
-    }
-
-        #scrollTopBtn:hover {
-            background-color: #555; /* Changes color on hover */
-        }
-
-
-
-    .responsive-iframe-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-    }
-
-        .responsive-iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-
-    /* This removes the underline from ALL links */
-    a {
-        text-decoration: none;
-    }
-
-        /* Optional: Bring the underline back when someone hovers over it 
-        a:hover {
-            text-decoration: underline;
-        }*/
-
-
-        video {
-  border-radius: 300px;
-  box-shadow: 0 0 300px rgba(0, 255, 255, 0.2); /* Soft neon glow */
-}
-
-.contact-img {
-    width: 100%;
-    max-width: 400px; /* Desktop size */
-    border: 8px solid white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgb(255, 0, 220);
-}
-
-/* When the screen is less than 768px wide */
-@media (max-width: 767px) {
-    .contact-img {
-        max-width: 250px; /* Mobile size */
-        margin: 0 auto;  /* Centers it if needed */
-        display: block;
-    }
-}
-
-
+/*---------------------------------------------------------------------------------*/
    
+/* 1. Set the Font for the Entire Page */
+body, html, * {
+    font-family: 'JetBrains Mono', 'Courier New', Courier, monospace !important;
+    letter-spacing: 0.02rem; /* Adds that digital data spacing */
+}
+
+/* 2. Global Matrix Green Glow for Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #00FF41 !important; /* Authentic Matrix Green */
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+    text-transform: uppercase; /* Matrix terminals usually use caps for headers */
+}
+
+/* 3. Global Paragraph and Lead Text Styling */
+p, span, .lead, li {
+    color: #a8ffb5 !important; /* A softer green for better readability */
+}
+
+/* 4. Matrix-Style Buttons for the whole site */
+.btn {
+    font-family: 'JetBrains Mono', monospace !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1.5px solid #00FF41 !important;
+    color: #00FF41 !important;
+    background: transparent !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #00FF41 !important;
+    color: #000 !important;
+    box-shadow: 0 0 15px #00FF41;
+}
+
+/* 5. Link Hover Effects */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00FF41 !important;
+    text-decoration: none;
+}
+
+body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 9999; /* Keeps it on top of everything */
+    background-size: 100% 3px, 3px 100%;
+    pointer-events: none; /* Allows you to still click buttons underneath */
+}
+
+/*-------------------------------------------------------------------------*/
+
+/* Matrix Theme Overrides */
+.navbar-matrix {
+    background-color: rgba(0, 0, 0, 0.9) !important; /* Deep black background */
+    border-bottom: 2px solid #00FF41; /* Signature Matrix Green border */
+    font-family: 'Courier New', Courier, monospace; /* Terminal font */
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+/* Green glowing text for Brand and Links */
+.navbar-matrix .navbar-brand, 
+.navbar-matrix .nav-link {
+    color: #00FF41 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #00FF41;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect: Brighten and flicker */
+.navbar-matrix .nav-link:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41;
+    background-color: rgba(0, 255, 65, 0.1);
+}
+
+/* Active link indicator */
+.navbar-matrix .nav-link.active {
+    border: 1px solid #00FF41;
+    background-color: rgba(0, 255, 65, 0.05);
+}
+
+/* Matrix style Toggler */
+.navbar-matrix .navbar-toggler {
+    border-color: #00FF41;
+}
+
+.navbar-matrix .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3 Blackboard%3Cpath stroke='rgba(0, 255, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Grayscale/Green Logo filter */
+.matrix-logo {
+    filter: sepia(100%) hue-rotate(80deg) brightness(1.2) contrast(1.2);
+    border: 1px solid #00FF41;
+}
